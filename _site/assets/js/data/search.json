@@ -1,0 +1,58 @@
+[
+  
+  {
+    "title": "Building a SOC Lab",
+    "url": "/posts/soc-lab/",
+    "categories": "security",
+    "tags": "siem, splunk",
+    "date": "2026-03-07 00:00:00 +0530",
+    "content": "Introduction  This article explains how I built a SOC lab using Splunk and log analysis.  Architecture     Windows endpoint   Sysmon logs   Splunk forwarder   Splunk SIEM"
+  },
+  
+  {
+    "title": "Threat Hunting with Splunk",
+    "url": "/posts/splunk-threat-hunting/",
+    "categories": "threat-hunting",
+    "tags": "splunk, blue-team",
+    "date": "2026-01-15 00:00:00 +0530",
+    "content": "Threat hunting is a proactive activity where analysts search for hidden threats.  Example SPL query:"
+  },
+  
+  {
+    "title": "Writing SIEM Detection Rules",
+    "url": "/posts/siem-detection-rule/",
+    "categories": "siem",
+    "tags": "splunk, detection-engineering",
+    "date": "2026-01-14 00:00:00 +0530",
+    "content": "Detection engineering focuses on identifying malicious activity through log analysis.  Example detection logic:     Multiple failed logins   Privilege escalation events   Suspicious PowerShell execution"
+  },
+  
+  {
+    "title": "Common Active Directory Attacks",
+    "url": "/posts/active-directory-attack/",
+    "categories": "active-directory",
+    "tags": "kerberos, ad-security",
+    "date": "2026-01-13 00:00:00 +0530",
+    "content": "Active Directory environments introduce several attack vectors.  Kerberoasting  Attackers request service tickets and crack them offline.  Pass-the-Hash  Authentication occurs using NTLM hashes rather than plaintext passwords."
+  },
+  
+  {
+    "title": "Malware Analysis Basics",
+    "url": "/posts/malware-analysis-basics/",
+    "categories": "malware",
+    "tags": "malware, reverse-engineering",
+    "date": "2026-01-12 00:00:00 +0530",
+    "content": "Malware analysis is the process of understanding how malicious software behaves.  Static Analysis  Tools:     strings   PEStudio   Detect It Easy   Dynamic Analysis  Tools:     Procmon   Wireshark   Regshot"
+  },
+  
+  {
+    "title": "Welcome to My Security Blog",
+    "url": "/posts/first-post/",
+    "categories": "soc",
+    "tags": "intro, cybersecurity",
+    "date": "2026-01-10 00:00:00 +0530",
+    "content": "This blog documents experiments, research notes, and cybersecurity learning.  Topics include:     Threat detection   Malware analysis   Security monitoring   Blue team operations"
+  }
+  
+]
+

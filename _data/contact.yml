@@ -1,0 +1,22 @@
+# Social icons shown in the sidebar bottom (next to theme toggle)
+# Uncomment and fill in the ones you want
+
+- type: github
+  icon: "fab fa-github"
+  url: "https://github.com/YOUR_GITHUB_USERNAME"    # ← replace
+
+# - type: linkedin
+#   icon: "fab fa-linkedin"
+#   url: "https://linkedin.com/in/YOUR_LINKEDIN"
+
+# - type: twitter
+#   icon: "fab fa-x-twitter"
+#   url: "https://twitter.com/YOUR_TWITTER"
+
+- type: email
+  icon: "fas fa-envelope"
+  url: "aravind@gmail.com"
+
+# - type: rss
+#   icon: "fas fa-rss"
+#   url: "/feed.xml"
