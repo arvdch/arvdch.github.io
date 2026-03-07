@@ -2,7 +2,7 @@
 title: "Building a SOC Lab with Splunk for SIEM & Log Management"
 date: 2025-07-15
 layout: post
-categories: [post]
+categories: [project]
 tags: [splunk, siem, soc, blue-team, log-analysis, cybersecurity, home-lab]
 ---
 
