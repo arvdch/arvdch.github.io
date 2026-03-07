@@ -23,7 +23,8 @@ Most cyber courses teach you how attacks work. This project was about the other 
 
 The project ran on Splunk Enterprise (free version), with Universal Forwarders shipping logs from a Windows client and an Ubuntu server into a central indexer.
 
----
+---![img686](/assets/img)
+
 
 ## Architecture
 
