@@ -1,5 +1,5 @@
 ---
-title: "Welcome — Why This Blog Exists"
+title: "Welcome To My First Blog"
 date: 2025-11-15
 layout: post
 categories: [post]
