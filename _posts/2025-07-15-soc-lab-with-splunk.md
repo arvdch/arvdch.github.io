@@ -186,6 +186,8 @@ We collected from four main sources:
 
 **Linux auth.log** — SSH login attempts, sudo usage, PAM failures on the Ubuntu box.
 
+![](assets/img/img890.jpg)
+
 ---
 
 ## Dashboards
