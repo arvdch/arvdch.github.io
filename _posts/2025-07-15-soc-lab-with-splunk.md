@@ -229,6 +229,9 @@ index=web_logs sourcetype=apache_error "authentication failure"
 
 The remaining three dashboards cover real-time traffic volume, unauthorized/forbidden access attempts, and error-level distribution across the Apache logs.
 
+![](assets/img/img837.jpg)
+
+
 ---
 
 ## Detection Rules (SPL)
