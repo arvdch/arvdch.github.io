@@ -23,25 +23,13 @@ Most cyber courses teach you how attacks work. This project was about the other 
 
 The project ran on Splunk Enterprise (free version), with Universal Forwarders shipping logs from a Windows client and an Ubuntu server into a central indexer.
 
-![](assets/img/img686.jpg)
 
 ## Architecture
 
 The setup follows a hub-and-spoke model. Every endpoint runs a Universal Forwarder that sends logs over port 9997 to the central Splunk instance, which handles indexing, searching, and dashboards.
 
-```
-Kali Linux (Attacker)
-        |
-   [Attack Simulation]
-        |              |
-Ubuntu Server     Windows Client
-- Apache2         - Sysmon
-- Univ. Fwd       - Univ. Fwd
-        |              |
-        ▼              ▼
-    Windows Server (Splunk Enterprise)
-      Indexer + Search Head
-```
+![](assets/img/img686.jpg)
+
 
 **Kali Linux** acts purely as the attacker — running Hydra, Nikto, and Burp Suite to simulate real threats.  
 **Ubuntu** runs an Apache2 web server and generates access and error logs.  
