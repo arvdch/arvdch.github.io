@@ -4,28 +4,27 @@ lang: en
 timezone: Asia/Kolkata
 
 title: Aravind
-tagline: Cybersecurity Researcher
+tagline: Cybersecurity Student
 
 description: >-
   Cybersecurity research notes, threat detection, and blue team operations.
 
-url: "https://spirit7-sudo.github.io"
+url: "https://arvdch.github.io"
 baseurl: ""
 
 avatar: /assets/img/avatar.png
 
 github:
-  username: spirit7-sudo    # ← replace with your GitHub username
+  username: arvdch
 
 twitter:
   username: ""
 
 social:
   name: Aravind
-  email: ""
+  email: "arvdchinthakindi@gmail.com"
   links:
-    - https://github.com/spirit7-sudo   # ← replace
-
+    - https://github.com/arvdch
 
 paginate: 10
 
@@ -41,15 +40,10 @@ analytics:
 pwa:
   enabled: false
 
-# ─── THIS IS THE KEY FIX ───────────────────────────────────────────
-# Chirpy's sidebar reads site.tabs which comes from this collection.
-# Without this block, _tabs/*.md files are ignored and the sidebar
-# only ever shows "Home".
 collections:
   tabs:
     output: true
     sort_by: order
-# ───────────────────────────────────────────────────────────────────
 
 defaults:
   - scope:
