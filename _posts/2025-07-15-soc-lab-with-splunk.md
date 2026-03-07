@@ -283,6 +283,8 @@ We ran three attack scenarios from Kali Linux and verified detection in Splunk e
 hydra -l admin -P /usr/share/wordlists/rockyou.txt <target_ip> http-get /admin
 ```
 
+![](assets/img/img792.jpg)
+
 **Result:** Auth failures appeared in Apache's `error.log` within seconds. The dashboard showed a clear spike. The SPL brute-force query identified the attacking IP in under 2 minutes.
 
 ### Directory Traversal with curl
