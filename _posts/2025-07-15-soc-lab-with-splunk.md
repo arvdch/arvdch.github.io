@@ -12,7 +12,7 @@ Not a tutorial. Not a walkthrough of someone else's setup. This is what we actua
 
 ---
 
-## What We Set Out to Do
+#### What We Set Out to Do
 
 Most cyber courses teach you how attacks work. This project was about the other side — the defenders' side. We wanted to:
 
@@ -24,7 +24,7 @@ Most cyber courses teach you how attacks work. This project was about the other 
 The project ran on Splunk Enterprise (free version), with Universal Forwarders shipping logs from a Windows client and an Ubuntu server into a central indexer.
 
 
-## Architecture
+### Architecture
 
 The setup follows a hub-and-spoke model. Every endpoint runs a Universal Forwarder that sends logs over port 9997 to the central Splunk instance, which handles indexing, searching, and dashboards.
 
@@ -38,7 +38,7 @@ The setup follows a hub-and-spoke model. Every endpoint runs a Universal Forward
 
 ---
 
-## Tools & Technologies
+### Tools & Technologies
 
 | Component | Purpose |
 |---|---|
@@ -52,9 +52,9 @@ The setup follows a hub-and-spoke model. Every endpoint runs a Universal Forward
 
 ---
 
-## Environment Setup
+### Environment Setup
 
-### Splunk Enterprise (Windows)
+#### Splunk Enterprise (Windows)
 
 Hardware we used:
 - CPU: 4+ cores
@@ -73,7 +73,7 @@ netsh advfirewall firewall add rule name="Splunk Web" dir=in action=allow protoc
 netsh advfirewall firewall add rule name="Splunk Management" dir=in action=allow protocol=TCP localport=8089
 ```
 
-### Ubuntu Server
+#### Ubuntu Server
 
 Install Apache and the Splunk Universal Forwarder:
 
@@ -95,7 +95,7 @@ sudo ufw allow 8089/tcp
 sudo ufw enable
 ```
 
-### Windows Client (Sysmon)
+#### Windows Client (Sysmon)
 
 ```cmd
 sysmon.exe -accepteula -i sysmonconfig.xml
@@ -105,9 +105,9 @@ We used a community-maintained Sysmon config (based on SwiftOnSecurity's ruleset
 
 ---
 
-## Configuration Files
+### Configuration Files
 
-### inputs.conf — Ubuntu Forwarder
+#### inputs.conf — Ubuntu Forwarder
 
 ```ini
 [default]
@@ -134,7 +134,7 @@ sourcetype = linux_syslog
 index = system_logs
 ```
 
-### outputs.conf — Ubuntu Forwarder
+#### outputs.conf — Ubuntu Forwarder
 
 ```ini
 [tcpout]
@@ -146,7 +146,7 @@ useACK = true
 compressed = true
 ```
 
-### inputs.conf — Windows Forwarder
+#### inputs.conf — Windows Forwarder
 
 ```ini
 [default]
@@ -174,7 +174,7 @@ index = sysmon
 
 ---
 
-## Log Sources
+### Log Sources
 
 We collected from four main sources:
 
@@ -190,7 +190,7 @@ We collected from four main sources:
 
 ---
 
-## Dashboards
+### Dashboards
 
 We built 7 dashboards in Splunk Dashboard Studio, all sharing a global time filter and refreshing in real time.
 
@@ -234,9 +234,9 @@ The remaining three dashboards cover real-time traffic volume, unauthorized/forb
 
 ---
 
-## Detection Rules (SPL)
+### Detection Rules (SPL)
 
-### Brute-Force Attack Detection
+#### Brute-Force Attack Detection
 
 Identifies IPs hammering authentication with more than 10 failures:
 
@@ -248,7 +248,7 @@ index=web_logs sourcetype=apache_error "authentication failure"
 | sort -count
 ```
 
-### Suspicious User Agent Analysis
+#### Suspicious User Agent Analysis
 
 Flags rare or scanner-like user agents:
 
@@ -260,7 +260,7 @@ index=web_logs sourcetype=apache_access
 | sort -count
 ```
 
-### Windows Failed Logon Analysis (EventCode 4625)
+#### Windows Failed Logon Analysis (EventCode 4625)
 
 Catches repeated failed Windows logins from the same source:
 
@@ -273,11 +273,11 @@ index=windows_security EventCode=4625
 
 ---
 
-## Attack Simulations & Results
+### Attack Simulations & Results
 
 We ran three attack scenarios from Kali Linux and verified detection in Splunk each time.
 
-### Brute-Force via Hydra
+#### Brute-Force via Hydra
 
 ```bash
 hydra -l admin -P /usr/share/wordlists/rockyou.txt <target_ip> http-get /admin
@@ -287,7 +287,7 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt <target_ip> http-get /admin
 
 **Result:** Auth failures appeared in Apache's `error.log` within seconds. The dashboard showed a clear spike. The SPL brute-force query identified the attacking IP in under 2 minutes.
 
-### Directory Traversal with curl
+#### Directory Traversal with curl
 
 ```bash
 curl "http://<target_ip>/../../../../etc/passwd"
@@ -296,7 +296,7 @@ curl "http://<target_ip>/../../../Windows/system32/config/sam"
 
 **Result:** Logged as 400/403 responses in `access.log`. The 404-by-URI dashboard flagged the suspicious paths immediately.
 
-### Web Scanning with Nikto
+#### Web Scanning with Nikto
 
 ```bash
 nikto -h <target_ip> -p 80
@@ -311,7 +311,7 @@ nikto -h <target_ip> -p 80
 
 ---
 
-## Challenges We Hit
+### Challenges We Hit
 
 **Firewall blocking port 9997** — Forwarders couldn't reach the indexer until we explicitly opened the port on both ends. Learned to always test connectivity with `telnet <ip> 9997` before debugging anything else.
 
@@ -323,7 +323,7 @@ nikto -h <target_ip> -p 80
 
 ---
 
-## Results
+### Results
 
 Over the testing period, the pipeline ingested approximately **350MB/day**:
 - Apache logs: ~50MB/day
@@ -340,7 +340,7 @@ Over the testing period, the pipeline ingested approximately **350MB/day**:
 
 ---
 
-## What's Next
+### What's Next
 
 A few things on the roadmap from here:
 
@@ -352,7 +352,7 @@ A few things on the roadmap from here:
 
 ---
 
-## Takeaways
+### Takeaways
 
 If I had to compress what we actually learned into a few points:
 
