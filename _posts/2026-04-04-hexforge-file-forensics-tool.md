@@ -12,7 +12,7 @@ image:
 
 `Hey folks, how's it going?`
 
-I just vibe coded a tool which i is very helpfull in solving many rooms in forensics, i have done forensics challenges by manually scanning the files so y not do it all with just one script thats where this idea came to my mind.
+I just vibe coded a tool which is very helpfull in solving many rooms in forensics, i have done forensics challenges by manually scanning the files so y not do it all with just one script thats where this idea came to my mind.
 
 If your a cybersecurity enthusiast like me then do make sure to check this tool out. 
 so this tool works by ckecking the hex or otherwise known as `Magic signature` to find and then validate the findings that is all and also cheks the readable strings and all that the repeatative stuff, and also dont worry about the false positives i have tried this on test cases and some ctf challenges and know what this thing works. And for the nerds below is the full discription.
