@@ -12,6 +12,8 @@ Most of my time is spent breaking things in controlled environments, analyzing n
 
 This blog is basically my **public notebook**.
 
+For my Resume you can check  👉  [Resume](https://arvdch.github.io/assets/Aravind_Chinthakindi_Resume_.pdf)
+
 ## Areas I Work In
 
 My interests include:
@@ -26,8 +28,6 @@ My interests include:
 
 Some days that means analyzing packets in Wireshark.  
 Other days it means staring at decompiled binaries trying to understand what the original developer was thinking.
-
-For my Resume you can check [Resume](assets/Aravind_Chinthakindi_Resume_.pdf)
 
 ## Environment
 
