@@ -27,6 +27,8 @@ My interests include:
 Some days that means analyzing packets in Wireshark.  
 Other days it means staring at decompiled binaries trying to understand what the original developer was thinking.
 
+For my Resume you can check [Resume](assets/Aravind_Chinthakindi_Resume_.pdf)
+
 ## Environment
 
 Most work is done on:
