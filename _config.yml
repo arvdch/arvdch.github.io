@@ -33,10 +33,10 @@ toc: true
 comments:
   active: ""
 
+# Web Analytics Settings
 analytics:
   google:
-    id: ""
-
+    id: G-MW6206D9EZ   # paste your Measurement ID here
 pwa:
   enabled: false
 
