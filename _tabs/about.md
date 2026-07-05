@@ -12,7 +12,7 @@ Most of my time is spent breaking things in controlled environments, analyzing n
 
 This blog is basically my **public notebook**.
 
-For my Resume you can check  👉  [Resume](https://arvdch.github.io/assets/Aravind_Chinthakindi_Resume_.pdf)
+For my Resume you can check  👉  [Resume](https://arvdch.github.io/assets/Aravind_Chinthakindi_Resume.pdf)
 
 ## Areas I Work In
 
