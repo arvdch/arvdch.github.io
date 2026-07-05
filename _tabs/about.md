@@ -14,20 +14,11 @@ This blog is basically my **public notebook**.
 
 For my Resume you can check  👉  [Resume](https://arvdch.github.io/assets/Aravind_Chinthakindi_Resume.pdf)
 
-## Areas I Work In
+my social accounts
+- Linkedin-> [Linkedin](https://www.linkedin.com/in/aravind-chinthakindi/)
+- Tryhackme(thm)-> [Tryhackme](https://tryhackme.com/p/aravind0)
+- Hackthebox(htb)-> [nothing here yet](https://app.hackthebox.com)
 
-My interests include:
-
-- Web exploitation
-- Network traffic analysis
-- Malware analysis
-- Reverse engineering
-- Blue team detection techniques
-- Privilege escalation
-- Security research through CTF challenges
-
-Some days that means analyzing packets in Wireshark.  
-Other days it means staring at decompiled binaries trying to understand what the original developer was thinking.
 
 ## Environment
 
@@ -51,6 +42,29 @@ This site exists to:
 
 Some posts will be polished writeups.  
 Others will simply document interesting problems and how they were solved.
+
+## Areas I Work In
+
+My interests include:
+
+- Web exploitation
+- Network traffic analysis
+- Malware analysis
+- Reverse engineering
+- Blue team detection techniques
+- Privilege escalation
+- Security research through CTF challenges
+
+Some days that means analyzing packets in Wireshark.  
+Other days it means staring at decompiled binaries trying to understand what the original developer was thinking.
+
+
+
+### My Tryhackme account
+![THM account](/assets/img/THM-banner.png)
+
+### Latest CTF partispation
+![cybergame2026](/assets/img/cybergame2026.jpg)
 
 ## Disclaimer
 
