@@ -133,7 +133,6 @@ tshark -r traffic.pcapng -Y "frame.number==10" \
 2a9c5234abca01e7
 ```
 
-<!-- Screenshot: tshark output showing server challenge value -->
 ![tshark output showing server challenge value](/assets/img/block-img3.png)
 
 
@@ -205,7 +204,6 @@ In Wireshark, go to:
 
 Enter `mrealman`'s cracked password: **`Blockbuster1`**
 
-<!-- Screenshot: Wireshark NTLMSSP preferences dialog with password entered -->
 ![Wireshark NTLMSSP preferences dialog with password entered](/assets/img/block-img4.png)
 
 
@@ -215,7 +213,6 @@ Wireshark automatically uses this to derive the session key and decrypt the SMB 
 File → Export Objects → SMB
 ```
 
-<!-- Screenshot: Export Objects SMB dialog showing clients156.csv -->
 ![Export Objects SMB dialog showing clients156.csv](/assets/img/block-img5.png)
 
 
@@ -248,7 +245,6 @@ sid         S-1-5-21-3761843758-2185005375-3584081457-1103
     SHA1:     91374e6e58d7b523376e3b1eb04ae5440e678717
 ```
 
-<!-- Screenshot: pypykatz terminal output showing eshellstrop's NT hash -->
 ![pypykatz terminal output showing eshellstrop's NT hash](/assets/img/block-img6.png)
 
 
@@ -265,7 +261,6 @@ From **Frame 82** in Wireshark (eshellstrop's NTLMSSP_AUTH):
 - **NTProofStr**: `0ca6227a4f00b9654a48908c4801a0ac`
 - **Encrypted Session Key**: `c24f5102a22d286336aac2dfa4dc2e04`
 
-<!-- Screenshot: Wireshark Frame 82 NTLMSSP_AUTH expanded showing session key -->
 ![Wireshark Frame 82 NTLMSSP_AUTH expanded showing session key](/assets/img/block-img7.png)
 
 
@@ -295,7 +290,6 @@ Next, go to Frame 82 (or the nearest encrypted SMB packet under eshellstrop's se
 4500000000100000
 ```
 
-<!-- Screenshot: Wireshark packet bytes pane with Session ID highlighted -->
 ![Wireshark packet bytes pane with Session ID highlighted](/assets/img/block-img8.png)
 
 
@@ -310,7 +304,6 @@ Add an entry:
 - **Session ID**: `4500000000100000`
 - **Random Session Key**: `20a642c086ef74eee26227bf1d0cff8c`
 
-<!-- Screenshot: Wireshark SMB2 session keys preferences dialog -->
 ![Wireshark SMB2 session keys preferences dialog](/assets/img/block-img9.png)
 
 
@@ -324,7 +317,6 @@ File → Export Objects → SMB
 
 Download `clients978.csv`, open it, and the second flag is inside.
 
-<!-- Screenshot: clients156.csv contents with flag visible -->
 ![clients978.csv contents with flag visible](/assets/img/block-img10.png)
 
 
