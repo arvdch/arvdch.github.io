@@ -1,5 +1,5 @@
 ---
-title: "<b>[HEXFORGE]</b> — A Python File Forensics Tool "
+title: "[HEXFORGE] — A Python File Forensics Tool "
 date: 2026-04-04 00:00:00 +0530
 categories: [Tools, Forensics]
 tags: [ctf, forensics, python, steganography, reverse-engineering, tools]
