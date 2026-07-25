@@ -1,7 +1,7 @@
 ---
 title: "[HEXFORGE] — A Python File Forensics Tool "
 date: 2026-04-04 00:00:00 +0530
-categories: [Tools, Forensics]
+categories: [projects]
 tags: [ctf, forensics, python, steganography, reverse-engineering, tools]
 image:
   path: /assets/img/hexforge_banner.png   # [SCREENSHOT: hexforge banner in terminal]
