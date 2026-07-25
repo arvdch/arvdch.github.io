@@ -2,7 +2,7 @@
 title: "[Opportunity Crawler] - I Built a Bot That Scrapes Cybersecurity Jobs and Sends Them to My Telegram Every Day"
 date: 2026-07-25
 layout: post
-categories: [projects, tools]
+categories: [projects]
 tags: [python, automation, cybersecurity, telegram, github-actions, groq, ai, job-hunting, open-source]
 image:
   path: /assets/img/opportunity_crawler_banner.png
