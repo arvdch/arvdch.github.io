@@ -61,6 +61,9 @@ Other days it means staring at decompiled binaries trying to understand what the
 
 
 ### My Tryhackme account
+
+Currently ranked in the top 5% on TryHackMe with a Capability Score of 62 (Sapphire League) — this blog documents the boxes, breaches, and breakthroughs along the way.
+
 ![THM account](/assets/img/THM-banner.png)
 
 ### Latest CTF partispation
