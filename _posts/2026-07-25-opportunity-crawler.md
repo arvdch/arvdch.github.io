@@ -5,10 +5,21 @@ layout: post
 categories: [projects]
 tags: [python, automation, cybersecurity, telegram, github-actions, groq, ai, job-hunting, open-source]
 image:
-  path: /assets/img/opportunity_crawler_banner.png
-hide_banner: true
+  path: /assets/img/opportunity_crawler_banner.svg
+pin: true
 ---
----
+<!-- Paste this directly under the front matter block to hide the banner image in post view -->
+<style>
+  #post-wrapper .preview-img,
+  #post-wrapper .post-preview-img,
+  main .preview-img,
+  .post-content + img,
+  #main img.preview-img {
+    display: none !important;
+  }
+</style>
+<!-- end of code to block the banner image in post view -->
+
 <svg width="100%" viewBox="0 0 680 340" role="img" xmlns="http://www.w3.org/2000/svg">
 <title>Opportunity Crawler banner</title>
 <desc>Animated banner showing a terminal-style pipeline from scraper to Telegram, with scrolling job titles and AI scores</desc>

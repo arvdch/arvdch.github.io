@@ -6,6 +6,7 @@ tags: [ctf, forensics, python, steganography, reverse-engineering, tools]
 image:
   path: /assets/img/hexforge_banner.png   # [SCREENSHOT: hexforge banner in terminal]
   alt: HEXFORGE File Forensics Tool
+pin: true
 ---
 
 ## Intro
